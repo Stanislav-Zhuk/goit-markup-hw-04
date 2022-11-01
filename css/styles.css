@@ -6,6 +6,7 @@
 	--bgd-white-color: #f5f4fa;
 	--accent-color: #2196f3;
 	--logo-black-color: #000000;
+	--hero-bgc: #c4c4c4;
 	--hero-button-activ: #188ce8;
 	--bgd-color-footer: #2f303a;
 	--adress-footer-color: rgba(255, 255, 255, 0.6);
@@ -165,10 +166,21 @@ header {
 /* Герой */
 
 .hero {
+	max-width: 1600px;
+	margin: 0 auto;
 	padding-top: 200px;
 	padding-bottom: 200px;
 
-	background-color: #2f303a;
+	background-color: var(--hero-bgc);
+	background-image: linear-gradient(
+			rgba(47, 48, 58, 0.4),
+			rgba(47, 48, 58, 0.4)
+		),
+		url(../images/hero-bgi.jpg);
+	background-repeat: no-repeat;
+	background-position: center;
+	background-size: cover;
+
 	text-align: center;
 }
 
