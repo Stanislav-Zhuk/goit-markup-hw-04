@@ -370,6 +370,10 @@ header {
 
 /* Постійні клієнти */
 
+.section-customers {
+	padding-bottom: 104px;
+}
+
 .customers {
 	display: flex;
 	justify-content: center;
@@ -406,13 +410,26 @@ footer {
 	background-color: var(--bgd-color-footer);
 }
 
+.container-footer {
+	display: flex;
+	align-items: baseline;
+	gap: 70px;
+}
+
+/* Лого та адресса */
+
+.cont-footer-address {
+	padding-top: 50px;
+	padding-bottom: 70px;
+}
+
 .logo-footer {
 	color: var(--primari-white-color);
 }
 
 .address-text {
 	display: inline-block;
-	padding-bottom: 9px;
+	margin-bottom: 9px;
 
 	font-style: normal;
 	line-height: 1.7;
@@ -434,19 +451,56 @@ footer {
 
 .logo-footer-style {
 	display: inline-block;
-	margin: 0;
-	padding-top: 60px;
-	padding-bottom: 20px;
+	margin-bottom: 20px;
 }
 
 .mail {
 	display: inline-block;
-	padding-bottom: 9px;
+	margin-bottom: 9px;
 }
 
 .tel {
 	display: inline-block;
-	margin-bottom: 60px;
+}
+
+/* Приєднуйтесь */
+
+.join-text {
+	margin-bottom: 20px;
+
+	font-weight: 700;
+	text-transform: uppercase;
+	line-height: calc(16 / 14);
+
+	color: var(--primari-white-color);
+}
+
+.join-list {
+	display: flex;
+	align-items: center;
+	gap: 10px;
+}
+
+.join-link {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	width: 44px;
+	height: 44px;
+	border-radius: 50%;
+
+	color: var(--primari-white-color);
+	background-color: rgba(255, 255, 255, 0.1);
+}
+
+.join-link:hover,
+.join-link:focus {
+	color: var(--primari-white-color);
+	background-color: var(--accent-color);
+}
+
+.join-icon {
+	fill: currentColor;
 }
 
 /* Проєкти Портфоліо */
