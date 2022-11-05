@@ -10,6 +10,7 @@
 	--hero-button-activ: #188ce8;
 	--bgd-color-footer: #2f303a;
 	--adress-footer-color: rgba(255, 255, 255, 0.6);
+	--main-svg-color: #afb1b8;
 
 	/* Інше */
 	--indent: 30px;
@@ -240,21 +241,30 @@ header {
 	background-color: var(--primari-white-color);
 }
 
-.section-features {
-	padding-top: 94px;
-}
-
 .visually-hidden {
-	position: absolute;
-	white-space: nowrap;
-	width: 1px;
-	height: 1px;
-	overflow: hidden;
-	border: 0;
-	padding: 0;
-	clip: rect(0 0 0 0);
-	clip-path: inset(50%);
-	margin: -1px;
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  border: 0;
+  padding: 0;
+  
+  white-space: nowrap;
+  clip-path: inset(100%);
+  clip: rect(0 0 0 0);
+  overflow: hidden;
+}
+.container-icons {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+
+	margin-bottom: 30px;
+	width: 270px;
+	height: 120px;
+
+	background-color: var(--bgd-white-color);
+	border-radius: 4px;
 }
 
 .section-title {
@@ -317,6 +327,8 @@ header {
 }
 
 .team-text {
+	margin-bottom: 16px;
+
 	font-size: 16px;
 	line-height: 1.19;
 
@@ -326,6 +338,66 @@ header {
 .team-description {
 	padding-top: 30px;
 	padding-bottom: 30px;
+}
+
+.socials {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	gap: 10px;
+}
+
+.socials-link {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	width: 44px;
+	height: 44px;
+	border-radius: 50%;
+
+	color: var(--main-svg-color);
+}
+
+.socials-link:hover,
+.socials-link:focus {
+	color: var(--primari-white-color);
+	background-color: var(--accent-color);
+}
+
+.socials-icon {
+	fill: currentColor;
+}
+
+/* Постійні клієнти */
+
+.customers {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	gap: 30px;
+}
+
+.customers-link {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	width: 170px;
+	height: 92px;
+
+	border: 1px solid var(--main-svg-color);
+	border-radius: 4px;
+
+	color: var(--main-svg-color);
+}
+
+.customers-link:hover,
+.customers-link:focus {
+	border-color: var(--accent-color);
+	color: var(--accent-color);
+}
+
+.customers-icon {
+	fill: currentColor;
 }
 
 /* Підвал */
