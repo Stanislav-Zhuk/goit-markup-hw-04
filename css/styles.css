@@ -149,7 +149,9 @@ header {
 }
 
 .contact-head-link {
-	display: block;
+	display: flex;
+	align-items: center;
+	gap: 10px;
 
 	font-weight: 500;
 	line-height: 1.14;
@@ -161,6 +163,10 @@ header {
 .contact-head-link:hover,
 .contact-head-link:focus {
 	color: var(--accent-color);
+}
+
+.contact-icons {
+	fill: currentColor;
 }
 
 /* Герой */
