@@ -370,10 +370,6 @@ header {
 
 /* Постійні клієнти */
 
-.section-customers {
-	padding-bottom: 104px;
-}
-
 .customers {
 	display: flex;
 	justify-content: center;
